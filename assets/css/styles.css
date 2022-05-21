@@ -59,6 +59,7 @@ body{
 	margin-left: 10px;
 }
 .form form .field {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 10px;
@@ -91,9 +92,121 @@ body{
 	border-radius: 5px;
 	cursor: pointer;
 }
+.form form .field i {
+	position: absolute;
+	right: 15px;
+	color: #ccc;
+	top: 70%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}  
 .form .link {
 	color: #333;
 }
 .form .link a:hover {
 	text-decoration: underline;
+}
+
+/* Users Css */
+.users {
+	padding: 25px 30px;
+}
+.users header,
+.users-list a {
+	display: flex;
+	padding-bottom: 17.5px;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #e6e6e6;
+}
+.wrapper img {
+	object-fit: cover;
+	border-radius: 50%;
+}
+:is(.users, .users-list) .content{
+	display: flex;
+	align-items: center;
+}
+.users header .content img {
+	height: 60px;
+	width: 60px;
+}
+:is(.users, .users-list) .details {
+	margin-top: 5.5px;
+	margin-left: 10.5px;
+	color: #000;
+}
+:is(.users, .users-list) .details span {
+	font-size: 16px;
+	font-weight: 500;
+}
+.users header .logout {
+	font-size: 12px;
+	background: #333;
+	color: #fff;
+	padding: 7px 12px;
+	border-radius: 50px;
+}
+.users .search {
+	margin: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+.users .search .text {
+	font-size: 12.5px;
+}
+.users .search input {
+	position: absolute;
+	height: 40px;
+	width: calc(100% - 50px);
+	border: 1px solid #ccc;
+	padding: 0 13px;
+	font-size: 13px;
+	border-radius: 5px;
+	outline: none;
+}
+.users .search button {
+	width: 49px;
+	height: 38px;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #333;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 17px;
+}
+.users-list {
+	max-height: 200px;
+	overflow-y: auto;
+}
+.users-list::-webkit-scrollbar {
+	width: 0px;
+}
+.users-list a {
+	margin-bottom: 5.75px;
+	padding-right: 15px;
+	page-break-after: 10px;
+	border-bottom-color: #f1f1f1;
+}
+.users-list a:last-child {
+	border: none;
+	margin-bottom: 0px;
+}
+.users-list a .content img{
+	height: 40px;
+	width: 40px;
+}
+.users-list a .content p {
+	color: #67676a;
+}
+.users-list a .status-dot i {
+	color: #468669;
+	font-size: 9.75px;
+}
+/* We'll use this class name in php to show offline status */
+.users-list a .status-dot.offline {
+	color: #ccc;
 }
