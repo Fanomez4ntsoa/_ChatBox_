@@ -55,10 +55,16 @@ body{
 .form .name-details .field:first-child {
 	margin-right: 10px;
 }
+.form .name-details .field:last-child {
+	margin-left: 10px;
+}
 .form form .field {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 10px;
+}
+.form form .field label {
+	margin-bottom: 2px;
 }
 .form form .field input {
 	outline: none;
@@ -69,4 +75,25 @@ body{
 	font-size: 14.5px;
 	padding: 0 10px;
 	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.form form .image input {
+	font-size: 15px;
+}
+.form form .button input {
+	margin-right: 13px;
+	height: 45px;
+	border: none;
+	font-size: 15px;
+	font-weight: 500;
+	background: #333;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.form .link {
+	color: #333;
+}
+.form .link a:hover {
+	text-decoration: underline;
 }
