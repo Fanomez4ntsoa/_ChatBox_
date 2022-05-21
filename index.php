@@ -16,29 +16,29 @@
 				<div class="name-details">
 					<div class="field input">
 						<label> Prenom </label>
-						<input type="text" name="" placeholder="Entrer votre prénom">
+						<input type="text" name="prenom" placeholder="Entrer votre prénom" required>
 					</div>
 				<div class="field input">
 						<label> Nom </label>
-						<input type="text" name="" placeholder="Entrer votre nom">
+						<input type="text" name="nom" placeholder="Entrer votre nom" required>
 				</div>
 				</div>
 				<div class="field input">
 						<label> Adresse email </label>
-						<input type="text" name="" placeholder="Entrer votre adresse email">
+						<input type="text" name="email" placeholder="Entrer votre adresse email" required>
 				</div>
 				<div class="field input">
 						<label> Mot de passe </label>
-						<input type="password" name="" placeholder="Entrer votre mot de passe">
+						<input type="password" name="mot_de_passe" placeholder="Entrer votre mot de passe" required>
 						<i class="fas fa-eye"></i>
 					</div>
 				<div class="field input">
 						<label> Confirmation mot de passe </label>
-						<input type="password" name="" placeholder="Mot de passe">
+						<input type="password" name="confirmation" placeholder="Mot de passe" required>
 				</div>
 				<div class="field image">
 						<label> Sélectionner une image </label>
-						<input type="file">
+						<input type="file" name="image"  required>
 					</div>
 				<div class="field button">
 					<input type="submit" name="" value="Continuer">
@@ -49,7 +49,6 @@
 	</div>
 
 
-	<script type="text/javascript" src="assets/js/script.js"></script>
 	<script type="text/javascript" src="assets/js/signup.js"></script>
 	<script type="text/javascript" src="assets/js/password.js"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

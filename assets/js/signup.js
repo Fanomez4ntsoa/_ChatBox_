@@ -13,10 +13,13 @@ continueBtn.onclick = () => {
 	xhr.onload = () => {
 		if(xhr.readyState === XMLHttpRequest.DONE) {
 			if(xhr.status === 200) {
-				let data = xhr.response; // xhr.response nous donne la réponse de l'URL passée.
+				let data = xhr.response; // xhr.response nous donne la réponse de l'URL passée
 				console.log(data); // Afficher la réponse en console
 			}
 		}
 	}
-	xhr.send();
+
+	/* Envoyer les données du formulaire par ajax à php */
+	let formData = new FormData(form); // créer un nouvel objet formData
+	xhr.send(formData); // envoyer les données du formulaire à php
 }
