@@ -11,7 +11,7 @@
 	<div class="wrapper">
 		<section class="form signup">
 			<header> Application de Chat </header>
-			<form action="#">
+			<form action="#" enctype="multipart/form-data">
 				<div class="error-txt">  Ceci est un message d'erreur !</div>
 				<div class="name-details">
 					<div class="field input">
